@@ -1,0 +1,32 @@
+# IBM Developer's Workframe/2 Make File Creation run at 14:08:18 on 09/03/93
+
+# Make File Creation run in directory:
+#   C:\ALGEN;
+
+# Assumed INCLUDE environment variable path:
+#   C:\TOOLKT20\CPLUS\OS2H;
+#   C:\TOOLKT20\C\OS2H;
+#   C:\TOOLKT20\ASM\OS2INC;
+#   C:\IBMCPP\INCLUDE;
+#   C:\IBMCPP\IBMCLASS;
+
+
+INCLUDE001=.
+INCLUDE001=$(INCLUDE001);$(INCLUDE)
+
+INCLUDE000=$(INCLUDE)
+
+
+algen.OBJ:  algen.c  \
+#  {$(INCLUDE000)}stdio.h  \
+#  {$(INCLUDE000)}time.h  \
+#  {$(INCLUDE000)}sys\types.h  \
+#  {$(INCLUDE000)}string.h  \
+#  {$(INCLUDE000)}stdlib.h  \
+#  {$(INCLUDE000)}ctype.h  \
+#  {$(INCLUDE000)}os2.h  \
+#  {$(INCLUDE000)}errno.h  \
+   {$(INCLUDE001)}mstruct.h  \
+#    {$(INCLUDE000)}time.h  \
+   {$(INCLUDE001)}fb.h  \
+   ALGEN.MAK
